@@ -16,7 +16,7 @@
 
         #usefulInfo {
             display: grid;
-            grid-template-columns: 250px 1fr;
+            grid-template-columns: 80px 1fr;
             gap: 2px 16px;
         }
 
@@ -9065,8 +9065,8 @@
     const nafInfo = nafDict[companyInfo.organization.activity.ape_code]
     const usefulStuff = {
       name: companyInfo.organization.name,
-      'registration number (SIREN?)': companyInfo.organization.registration_number,
-      'full registration number (SIRET?)': companyInfo.organization.full_registration_number,
+      SIREN: companyInfo.organization.registration_number,
+      SIRET: companyInfo.organization.full_registration_number,
       address: `${ companyInfo.organization.address.postal_code } ${ companyInfo.organization.address.country } ${ companyInfo.organization.address.city } ${ companyInfo.organization.address.street }`,
       nafInfo1: nafInfo.level1_label,
       nafInfo2: nafInfo.level2_label,
