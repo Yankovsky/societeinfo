@@ -16,7 +16,7 @@
 
         #usefulInfo {
             display: grid;
-            grid-template-columns: 80px 1fr;
+            grid-template-columns: 200px 1fr;
             gap: 2px 16px;
         }
 
@@ -8852,96 +8852,78 @@
   }
 
   const mockData = {
-    'success': true,
-    'result': {
-      'id': '5d097368f0f03e716fa4d85b',
+    'success': true, 'result': {
+      'id': '5ccbbf2af0f080d172c1f050',
       'organization': {
-        'status': 'Dead',
+        'status': 'Active',
         'risk': {
-          'risk_level': 4,
-          'risk_level_description': 'Société clôturée',
+          'risk_level': 0.0,
+          'risk_level_description': 'Pas de risque identifié',
           'collective_procedure_in_progress': false,
           'collective_procedures': [],
-          'legal_source_organization_statuses': [
-            {
-              'source_name': 'INSEE',
-              'organization_status': 'Dead',
-              'organization_status_date': '2020-08-01'
-            }
-          ]
+          'legal_source_organization_statuses': [{ 'source_name': 'Bodacc', 'organization_status': 'Active' }]
         },
-        'creation_date': '2017-05-15',
-        'closing_date': '2020-08-01',
+        'creation_date': '2019-04-20',
         'capital': '1000',
-        'registration_number': '830015210',
-        'full_registration_number': '83001521000024',
-        'vat_number': 'FR61830015210',
+        'registration_number': '850419847',
+        'full_registration_number': '85041984700015',
+        'vat_number': 'FR85850419847',
         'greffe_name': 'Paris',
-        'name': 'LANSROD BIG DATA',
+        'name': 'LES ANTIQUAIRES BRETONS',
         'activity': {
-          'ape_code': '6202A',
-          'ape_code_level1': 'JZ',
-          'ape_code_level2': 'JC',
-          'ape_code_level3': '62',
-          'ape_code_level4': 'J62Z',
-          'ape_code_level5': '6202A',
-          'ape_name': 'Conseil en systèmes et logiciels informatiques',
-          'corporate_object': 'Vendre des logiciels ou matériels informatiques, et toutes activités afférentes à la gestion du "big data", ainsi que les services d\'intégration, le support applicatif et fonctionnel s\'y rattachant, vendre des développements en rapport au traitement de l\'information, à la conception, à la programmation, à la maintenance et à l\'intégration des logiciels et systèmes informatiques.'
+          'ape_code': '4779Z',
+          'ape_code_level1': 'GZ',
+          'ape_code_level2': 'GZ',
+          'ape_code_level3': '47',
+          'ape_code_level4': 'G47Z',
+          'ape_code_level5': '4779Z',
+          'ape_name': 'Commerce de détail de biens d\'occasion en magasin',
+          'corporate_object': 'L\'achat, la revente et la restauration d\'antiquités, de bijoux anciens et d\'occasion, objets anciens et d\'occasion, objets divers de collection, mobilier ancien et d\'occasion, documents anciens, successions, débarras.'
         },
         'legal': {
-          'name': 'SASU Société par actions simplifiée à associé unique',
+          'name': 'SARL unipersonnelle',
           'code_level1': '5',
-          'code_level2': '57',
-          'code_level3': '5720',
+          'code_level2': '54',
+          'code_level3': '5498',
           'person_type': 'LegalEntity',
           'type': 'Siege'
         },
         'address': {
-          'street': '155 RUE DE CHARONNE',
-          'postal_code': '75011',
+          'street': '7 RUE DE GRANGE BATELIERE',
+          'postal_code': '75009',
           'city': 'PARIS',
           'country_code': 'FR',
           'country': 'FRANCE',
-          'lng': 2.3795,
-          'lat': 48.8574
+          'lng': 2.3399,
+          'lat': 48.8718
         },
-        'insee_category': {
-          'code': 'TPE',
-          'name': 'Très petite entreprise'
-        },
-        'last_legal_update_date': '2022-08-29',
-        'establishments_count': 1
+        'insee_category': { 'code': 'TPE', 'name': 'Très petite entreprise' },
+        'last_legal_update_date': '2021-09-24',
+        'establishments_count': 0
       },
       'contacts': {
         'main_corporate_officier': {
-          'lastName': 'AUDENSIEL BIG DATA',
-          'name': 'AUDENSIEL BIG DATA',
-          'role': 'Président',
-          'role_start_date': '2020-01-20',
+          'civility': 'Mr',
+          'firstName': 'Yann',
+          'lastName': 'MAHE',
+          'name': 'Yann MAHE',
+          'birth_date': '1966-10-25',
+          'role': 'Gérant',
+          'role_start_date': '2019-04-30',
           'role_end_date': '',
-          'company': true,
-          'registration_number': '879399525'
+          'company': false
         },
-        'corporate_officiers': [
-          {
-            'lastName': 'AUDENSIEL BIG DATA',
-            'name': 'AUDENSIEL BIG DATA',
-            'role': 'Président',
-            'role_start_date': '2020-01-20',
-            'role_end_date': '',
-            'company': true,
-            'registration_number': '879399525'
-          },
-          {
-            'lastName': 'SCOREX',
-            'name': 'SCOREX',
-            'role': 'Commissaire aux comptes titulaire',
-            'role_start_date': '2017-06-01',
-            'role_end_date': '',
-            'company': true,
-            'registration_number': '334607736'
-          }
-        ]
+        'corporate_officiers': [{
+          'civility': 'Mr',
+          'firstName': 'Yann',
+          'lastName': 'MAHE',
+          'name': 'Yann MAHE',
+          'birth_date': '1966-10-25',
+          'role': 'Gérant',
+          'role_start_date': '2019-04-30',
+          'role_end_date': '',
+          'company': false
+        }]
       },
       'web_infos': {
         'websites': [],
@@ -8950,97 +8932,52 @@
         'facebook': {},
         'wikipedia': {},
         'youtube': {},
-        'instagram': {}
+        'instagram': {},
+        'keywords': {
+          'terms': [{ 'term': 'occasion', 'weight': 90.0 }, {
+            'term': 'anciens',
+            'weight': 90.0
+          }, { 'term': 'collection', 'weight': 30.0 }, { 'term': 'successions', 'weight': 30.0 }, {
+            'term': 'ancien',
+            'weight': 30.0
+          }, { 'term': 'restauration', 'weight': 30.0 }, { 'term': 'documents', 'weight': 30.0 }, {
+            'term': 'revente',
+            'weight': 30.0
+          }, { 'term': 'debarras', 'weight': 30.0 }, { 'term': 'bijoux', 'weight': 30.0 }, {
+            'term': 'antiquites',
+            'weight': 30.0
+          }, { 'term': 'mobilier', 'weight': 30.0 }]
+        }
       },
       'financials': {
-        'last_staff': 0,
-        'years': [
-          {
-            'year': '2020',
-            'staff': 0,
-            'staff_metadata': {
-              'estimated': true
-            }
-          },
-          {
-            'year': '2019',
-            'staff': 69,
-            'staff_metadata': {
-              'estimated': true
-            }
-          },
-          {
-            'year': '2018',
-            'staff': 13,
-            'staff_metadata': {
-              'estimated': true
-            }
-          }
-        ],
-        'last_staff_sources': [
-          {
-            'source': 'Sirene',
-            'range_value': '10-19',
-            'date': '2018-01-01',
-            'estimated': true
-          }
-        ]
+        'last_sales': 110000.0,
+        'years': [{ 'year': '2021', 'sales': 110000.0, 'sales_metadata': { 'estimated': true } }]
       },
       'mark_infos': {},
       'last_bodacc': {
         'type': 'Bodacc',
-        'bodacc_type': 'Radiations',
-        'parution_date': '2020-09-29',
-        'number': '3365',
-        'rcs_name': '830015210 RCS Paris',
-        'legal_name': 'LANSROD BIG DATA',
-        'legal_status': 'Société par actions simplifiée (à associé unique)',
-        'address': '155 rue de Charonne 75011 Paris',
-        'radiation_category': 'O'
+        'bodacc_type': 'Avis de dépôts des comptes des sociétés',
+        'parution_date': '2021-02-26',
+        'number': '2261',
+        'rcs_name': '850419847 RCS Paris',
+        'legal_name': 'LES ANTIQUAIRES BRETONS',
+        'legal_status': 'Société à responsabilité limitée (à associé unique)',
+        'address': '7 rue de la Grange Batelière 75009 Paris',
+        'balance_sheet_close_date': '2019-12-31',
+        'balance_sheet_deposit_type': 'Comptes annuels et rapports'
       },
-      'actes': [
-        {
-          'date': '2020-09-18',
-          'type': 'Acte',
-          'description': 'Dissolution par suite de réunion de toutes les parts sociales entre une seule main'
-        },
-        {
-          'date': '2020-01-20',
-          'type': 'Décision(s) de l\'associé unique',
-          'description': 'Changement de président'
-        },
-        {
-          'date': '2019-06-13',
-          'type': 'Procès-verbal d\'assemblée générale extraordinaire',
-          'description': 'Transfert du siège social'
-        },
-        {
-          'date': '2019-06-13',
-          'type': 'Procès-verbal d\'assemblée générale extraordinaire',
-          'description': 'Modification(s) statutaire(s)'
-        },
-        {
-          'date': '2019-06-13',
-          'type': 'Statuts mis à jour'
-        },
-        {
-          'date': '2018-08-17',
-          'type': 'Document relatif au bénéficiaire effectif'
-        },
-        {
-          'date': '2017-06-01',
-          'type': 'Statuts constitutifs'
-        },
-        {
-          'date': '2017-06-01',
-          'type': 'Liste des souscripteurs'
-        },
-        {
-          'date': '2017-06-01',
-          'type': 'Certificat',
-          'description': 'Divers'
-        }
-      ]
+      'actes': [{
+        'date': '2021-03-04',
+        'type': 'Décision(s) de l\'associé unique',
+        'description': 'Poursuite d\'activité malgré un actif net devenu inférieur à la moitié du capital social'
+      }, { 'date': '2019-04-30', 'type': 'Document relatif au bénéficiaire effectif' }, {
+        'date': '2019-04-30',
+        'type': 'Statuts constitutifs'
+      }, { 'date': '2019-04-30', 'type': 'Certificat', 'description': 'Divers' }, {
+        'date': '2019-04-30',
+        'type': 'Procès-verbal d\'assemblée générale ordinaire',
+        'description': 'Nomination(s) de gérant(s)'
+      }]
     }
   }
 
@@ -9051,7 +8988,7 @@
     if (useMockDataCheckbox.checked) {
       return Promise.resolve(mockData)
     } else {
-      return fetch(`https://societeinfo.com/app/rest/api/v2/company.json/${ id }?key=${ API_KEY }`)
+      return fetch(`https://societeinfo.com/app/rest/api/v2/company.json/${ id }?withKeywords=true&key=${ API_KEY }`)
         .then(response => response.json())
     }
   }
@@ -9067,7 +9004,15 @@
       name: companyInfo.organization.name,
       SIREN: companyInfo.organization.registration_number,
       SIRET: companyInfo.organization.full_registration_number,
+      status: companyInfo.organization.status,
+      'creation date': companyInfo.organization.creation_date,
+      'vat number': companyInfo.organization.vat_number,
+      'legal code': companyInfo.organization.legal.code_level2,
+      // 'convention collective code': companyInfo.organization.convention_collective.code,
       address: `${ companyInfo.organization.address.postal_code } ${ companyInfo.organization.address.country } ${ companyInfo.organization.address.city } ${ companyInfo.organization.address.street }`,
+      'corporate object': companyInfo.organization.activity.corporate_object,
+      'corporate officer name': companyInfo.contacts.main_corporate_officier.firstName,
+      'corporate officer lastname': companyInfo.contacts.main_corporate_officier.lastName,
       nafInfo1: nafInfo.level1_label,
       nafInfo2: nafInfo.level2_label,
       nafInfo3: nafInfo.level3_label,
